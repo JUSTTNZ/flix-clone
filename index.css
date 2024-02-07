@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background: hsl(0, 1%, 14%);
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* NAV */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 20px 0;
+    justify-content: space-between;
+    background: #141414;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+}
+
+.main-nav .logo {
+    width: 100px;
+    margin-left: 70px;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    padding: 0 10px;
+}
+
+.main-nav ul li a {
+    padding-bottom: 10px;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.main-nav ul.right-menu {
+    margin-right: 50px;
+}
+
+.main-nav ul.right-menu {
+    padding-top: 20px;
+}
+
+/* HERO SECTION */
+
+section.hero-main {
+    background: url(images/MoviePoster.png)no-repeat center center/cover;
+    top: 90px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+}
+
+/* .hero-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.hero1, .hero2, .hero3, .hero4 {
+    position: relative;
+    color: #fff;
+    z-index: 1;
+} */
+
+.hero-main .hero1 .hero1-main {
+    font-size: 7rem;
+    font-weight: bold;
+    padding-top: 25rem;
+}
+
+.hero-main .hero1 h3 {
+    font-size: 7rem;
+    margin-top: -5.9rem;
+    font-weight: lighter;
+    padding-left: 6rem;
+}
+
+.hero-main .hero2 .hero2-main {
+    font-size: 30px;
+    margin-top: -25px;
+    
+}
+.hero-main .hero2 .hero2-main::before {
+    content: url('images/Top10Badge.png');
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.hero-main .hero3 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.hero-main .hero4 {
+    display: flex;
+    gap: 1rem;
+    font-size: 20px;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+}
+
+.hero-main .hero4 .hero4-main {
+    font-size: 20px;
+    display: flex; 
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    gap: 20px;
+}
+
+.hero-main .hero4 .hero4-main a {
+    color: black;
+}
+
+.hero-main .hero4 .hero4-main::before {
+    content: url('images/vector2.png');
+    width: 10px;
+    height: 10px;
+    margin-top: 3px;
+}
+
+.hero-main .hero4 .hero4-sub {
+    color: #fff;
+    background: #706f68;
+    padding: 4px 45px;
+    border-radius: 5px;
+    gap: 20px;
+    display: flex;
+    gap: 2rem;
+}
+
+.hero-main .hero4 .hero4-sub a {
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.hero-main .hero4 .hero4-sub::before {
+    content: url('images/Detail.png');
+    width: 10px;
+    height: 10px;
+    margin-top: px;
+}
+
+.net-quote {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.populer {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+
+}
+
+.populer img {
+   width: 460px;
+   /* height: 100%; */
+}
+
+.imglast {
+    width: 460px;
+    height: 260px;
+}
+.genre1 {
+    margin-top: 50px;
+    padding-left: 70px;
+}
+
+.genre1 p.same {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.genre1 ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.genre1 img {
+    width: 460px;
+}
+
+.progress {
+    display: flex;
+    position: relative;
+    width: 50px;
+    height: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 220px;
+}
+
+.progress::before {
+    content: url('images/Progress.png');
+    position: absolute;
+    top: 0;
+    left: 133px;
+    width: 70px;
+    margin-top: -10px;
+}
+/* this [arrow] id is used to add right arrow direction at the last movie in each genre */
+/* .arrow {
+    background: url(images/vector2.png);
+    width: 100%;
+    z-index: 1;
+} */
+
+
+
+
