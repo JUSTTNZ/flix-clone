@@ -7,7 +7,7 @@
 
 
 body {
-    background: hsl(0, 1%, 14%);
+    background: #141414;
     color: #fff;
     font-size: 15px;
     line-height: 1.5;
@@ -104,7 +104,7 @@ section.hero-main {
 .hero-main .hero1 .hero1-main {
     font-size: 7rem;
     font-weight: bold;
-    padding-top: 25rem;
+    padding-top: 13.7rem;
 }
 
 .hero-main .hero1 h3 {
@@ -179,11 +179,10 @@ section.hero-main {
     content: url('images/Detail.png');
     width: 10px;
     height: 10px;
-    margin-top: px;
 }
 
 .net-quote {
-    font-size: 30px;
+=font-size: 30px;
     margin-bottom: 10px;
 }
 
@@ -197,14 +196,15 @@ section.hero-main {
 }
 
 .populer img {
-   width: 460px;
+    display: flex;
+   width: 100%;
    /* height: 100%; */
 }
 
-.imglast {
+/* .imglast {
     width: 460px;
     height: 260px;
-}
+} */
 .genre1 {
     margin-top: 50px;
     padding-left: 70px;
@@ -221,27 +221,25 @@ section.hero-main {
     justify-content: space-between;
 }
 
-.genre1 img {
-    width: 460px;
-}
-
 .progress {
     display: flex;
     position: relative;
-    width: 50px;
-    height: 10px;
-    justify-content: center;
-    align-items: center;
-    padding-left: 220px;
+    justify-content: space-evenly;
+    align-items: start;
+    text-align: center;
+    /* width: 100%; */
+    max-width: 100%;
+    top: 10px;
+    
 }
 
 .progress::before {
     content: url('images/Progress.png');
     position: absolute;
-    top: 0;
-    left: 133px;
-    width: 70px;
-    margin-top: -10px;
+    top: -13px;
+    left: 55px;
+    
+
 }
 /* this [arrow] id is used to add right arrow direction at the last movie in each genre */
 /* .arrow {
@@ -250,6 +248,9 @@ section.hero-main {
     z-index: 1;
 } */
 
-
+.genre1 .long {
+    display: flex;
+    height: 77%;
+}
 
 
