@@ -1,4 +1,4 @@
-* {
+.* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -459,7 +459,7 @@ footer .foot {
         transition: 0.4s;
     }
 
-    .main-menu  li{
+   /* .main-menu  li{
         transform: translateY(50px);
     }
 
@@ -593,5 +593,5 @@ footer .foot {
         content: url('images/Detail.png');
         width: 10px;
         height: 10px;
-    }
+    }*/
 }
