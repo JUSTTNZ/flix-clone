@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="index.css">
     <title>Netflix-clone</title>
 </head>
 <body>
     <div class="container">
         <!-- nav bar -->
-        <nav class="main-nav">
+        <nav class="main-nav" >
             <img src="images/NetflixLogoSvg.png" alt="" class="logo">
-            <ul class="main-menu">
+
+            <i class='bx bx-menu' onclick="mobileLink()"></i>
+            <ul class="main-menu" id="show" >
+                <i class='bx bx-x cancel' onclick="mobileClose()"></i>
                 <li><a href="#">Ana Sayfa</a></li>
                 <li><a href="#">Diziler</a></li>
                 <li><a href="#">Filmier</a></li>
@@ -24,7 +28,7 @@
                 <li><a href="#">COCUK</a></li>
                 <li><a href="#"><img src="images/GiftBox.png" alt=""></a></li>
                 <li><img src="images/NotificationBell.png" alt=""></li>
-                <li><img src="images/ProfileIMG.png" alt=""></li>
+                <li><a href="profile.html"><img src="images/ProfileIMG.png" alt=""></a></li>
                 <li><img src="images/DownArrow.png" alt=""></li>
 
             </ul>
@@ -68,20 +72,40 @@
             </div>
         </section>
         <!-- different movie genres -->
-        <section>
+        <section class="genre">
             <div class="genre1">
                 <p class="same">Kemal,izlemeye Devam Et</p>
 
-                <ul class="kemal">
-                    <li><img src="images/MoviePoster (4).png" alt=""><span class="progress"><img src="images/ProgressBar.png" alt=""></span></li>
-                    <li><img src="images/MoviePoster (5).png" alt=""><span class="progress"><img src="images/ProgressBar.png" alt=""></span></li>
-                    <li><img src="images/MoviePoster30.png" alt=""><span class="progress"><img src="images/ProgressBar.png" alt=""></span></li>
-                    <li><img src="images/MoviePoster (6).png" alt=""><span class="progress"><img src="images/ProgressBar.png" alt=""></span></li>
-                    <li><img src="images/MoviePoster (7).png" alt="" ><span class="progress"><img src="images/ProgressBar.png" alt=""></span></li>
-                </ul>
+                <div class="kemal">
+                    <ul>
+                        <li><img src="images/MoviePoster (4).png" alt=""></li>
+                        <li><span class="progress"><img src="images/ProgressBar.png" alt=""></span></li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="images/MoviePoster (5).png" alt=""></li>
+                        <li><span class="progress"><img src="images/ProgressBar.png" alt=""></span></li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="images/MoviePoster30.png" alt=""></li>
+                        <li><span class="progress"><img src="images/ProgressBar.png" alt=""></span></li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="images/MoviePoster (6).png" alt=""></li>
+                        <li><span class="progress"><img src="images/ProgressBar.png" alt=""></span></li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="images/MoviePoster (7).png" alt="" ></li>
+                        <li><span class="progress"><img src="images/ProgressBar.png" alt=""></span></li>
+                    </ul>
+                </div>    
+
             </div>
 
-            <div class="genre1">
+            <div class="genre2">
                 <p class="same">Gundemdekiller</p>
 
                 <ul class="kemal">
@@ -89,12 +113,12 @@
                     <li><img src="images/MoviePoster (8).png" alt=""></li>
                     <li><img src="images/MovieHorizontalCard2.png" alt=""></li>
                     <li><img src="images/MoviePoster (9).png" alt=""></li>
-                    <li><img src="images/MoviePoster (10).png" alt="" </li>
+                    <li><img src="images/MoviePoster (10).png" alt=""></li>
                 </ul>
 
             </div>
 
-            <div class="genre1">
+            <div class="genre3">
                 <p class="same">Netflix Original icerikleri</p>
 
                 <ul class="kemal">
@@ -105,26 +129,111 @@
                     <li><img src="images/MoviePoster (15).png" alt="" class="long"
                         id="arrow"></li>
                 </ul>
-
-                
-
-
-
-
             </div>
 
+            <div class="genre4">
+                <p class="same">Turkiye'de Bungunun Top 10 Lisesi</p>
+
+                <div class="kemal">
+                    <ul>
+
+                        <!-- <li><img src="images/RankCard.png" alt=""></li> -->
+                        <li><img src="images/Vector (3).png" alt=""></li>
+                        <li><span class="indexed"><img src="images/MoviePoster (16).png" alt=""></span></li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="images/Vector (4).png" alt=""></li>
+                        <li><span class="indexed"><img src="images/MoviePoster99.png" alt=""></span></li>
+                    </ul>
+                    <ul>
+                        <li><img src="images/Vector (5).png" alt=""></li>
+                        <li><span class="indexed"><img src="images/MoviePoster (1)9.png" alt=""></span></li>
+                    </ul>
+                    <ul>
+                        <li><img src="images/Vector (6).png" alt=""></li>
+                        <li><span class="indexed"><img src="images/MoviePoster (17).png" alt=""></span></li>
+                    </ul>
+                    <ul>
+                        <li><img src="images/Vector (7).png" alt=""></li>
+                        <li><span class="indexed"><img src="images/MoviePoster (18).png" alt=""></span></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
+        <div class="izles">
+            <p class="same">Yeniden izle</p>
+            <div class="izle">
+                <img src="images/MoviePoster (19).png" alt="">
+            <img src="images/MoviePoster (20).png" alt="">
+            <img src="images/MoviePoster (21).png" alt="">
+            <img src="images/MoviePoster (22).png" alt="">
+            <img src="images/MoviePoster (23).png" alt="">
+            <img src="images/MoviePoster (24).png" alt="">
+            </div>
+        </div>
 
+        <div class="listem">
+            <p class="same">Listem</p>
 
+            <ul class="kemal">
+                <li><img src="images/MoviePoster (25).png" alt=""></li>
+                <li><img src="images/MoviePoster (26).png" alt=""></li>
+                <li><img src="images/MoviePoster (27).png" alt=""></li>
+                <li><img src="images/MoviePoster (28).png" alt=""></li>
+                <li><img src="images/MoviePoster (29).png" alt=""></li>
+            </ul>
+        </div>
 
-    
+        <footer>
 
+            <div class="social">
+                <ul>
+                    <li><a href="#"><img src="images/Vector (8).png" alt=""></a></li>
+                    <li><a href="#"><img src="images/Vector (9).png" alt=""></a></li>
+                    <li><a href="#"><img src="images/Vector (10).png" alt=""></a></li>
+                    <li><a href="#"><img src="images/Vector (11).png" alt=""></a></li>
+
+                </ul>
+            </div>
+
+            <div class="enquiries">
+                <ul>
+                    <li><a href="#">investor Relations</a></li>
+                    <li><a href="#">Ways to Watch</a></li>
+                    <li><a href="#">Corporate information</a></li>
+                    <li><a href="#">Only on Netflix</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <ul>    
+                    <li><a href="#">Redeem Gifts Cards</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Speed test</a></li>
+                </ul>
+                <ul>         
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Buy Gifts Cards</a></li>
+                    <li><a href="#">Cookie Prefrences</a></li>
+                    <li><a href="#">Legal Notices</a></li>
+                </ul>  
+            </div>
+           
+            <p>Hizmet Kodu</p>
         
-
+            <div class="foot"> 1997-2021 NETFLIX, INC. {i-062d573a0ee099242}</div>
+        </footer>
 
     </div>
-    
+    <script src="main.js"></script>
   
 </body>
 </html>

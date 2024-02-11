@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: url(landingpageimages/image\ 1.png) no-repeat center center/cover;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.image img {
+    margin: 20px 45px;
+}
+
+.hero{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #000;
+    width: 400px;
+    max-width: 100%;
+    opacity: 0.9;
+    margin: 0 auto;
+    padding: 100px 50px;
+    font-size: 15px;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: start;
+    text-align: center;
+}
+
+.sign-in h2 {
+    margin-top: -70px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sign-in input {
+    width: 100%;
+    height: 40px;
+    margin: 0 0 10px;
+    border: none;
+    background: #2b2b2b;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.sign-in input::placeholder {
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.sign {
+    margin-top: 30px;
+}
+.sign-in .sign a {
+    width: 100%;
+    background: red;
+    text-align: center;
+    color: #fff;
+    padding: 12px 130px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.sign-in .sign a:hover {
+    opacity: 0.7;
+}
+
+.sign-in .options {
+    display: flex;
+    gap: 130px;
+    margin-top: 11px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+.sign-in .options a {
+    color: #fff;
+}
+
+.sign-in .options a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.sign-in .fb {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.fb h3 {
+    font-size: 12px;
+    padding-bottom: 8px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.sign-in .fb img {
+    width: 20px;
+    height: 20px;
+}
+
+.hero .net {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.net h3 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.net a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.net a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.hero p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    align-items: start;
+    background: #000;
+    opacity: 0.7;
+    color: #727272;
+    padding-left: 200px;
+    text-align: center;
+    
+}
+
+footer a {
+    color: #727272;
+    font-size: 14px;
+    text-align: center;
+}
+
+.enquiries {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 120px;
+}
+
+footer .lang .li1{
+    background: #000;
+    border: 1px solid #353333;
+    padding: 0 5px;
+}
+
+footer .lang .li1 span {
+    padding: 0 3px;
+}
+
+@media (max-width: 500px) {
+    body {
+        min-height: 100vh;
+
+    }
+
+    .conatiner {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        box-sizing: border-box;
+    }
+    .image img{
+        width: 100px;
+    }
+
+    .hero {
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .sign-in {
+        width: 100%;
+    }
+
+    .sign {
+        width: 100%;
+    }
+
+    .sign a {
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        margin-top: 100px;
+    
+    }
+
+    .enquiries {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+
+        margin-right: 50px;
+    }
+}
